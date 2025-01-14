@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-[#f00]">
       <h1>Hello, World</h1>
       <p>Coming soon!!!</p>
     </div>
