@@ -1,11 +1,12 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/home/index.tsx';
 
 function App() {
   return (
-    <div className="text-[#f00]">
-      <h1>Hello, World</h1>
-      <p>Coming soon!!!</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+  </Routes>
   );
 }
 
