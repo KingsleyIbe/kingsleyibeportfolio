@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="px-[100px] flex flex-row justify-between items-center">
       <div>
-        <Link to="mailto:ibekingsley66@gmail.com">Let's Connect</Link>
+        {/* <Link to="mailto:ibekingsley66@gmail.com">Let's Connect</Link> */}
         <p>Copyright &copy; {new Date().getFullYear().toString()}</p>
       </div>
       <ul className="flex flex-row gap-2 text-[#ccc]">
