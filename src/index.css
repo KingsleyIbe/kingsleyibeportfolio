@@ -21,12 +21,13 @@ body.dark-mode {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.active-link {
+.active-link, .line {
   position: relative;
   display: inline-block;
 }
 
-.active-link::after {
+.active-link::after, 
+.line::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -45,7 +46,9 @@ body.dark-mode {
 }
 
 
-.nav-link:hover, .active-link:hover {
+.nav-link:hover,
+.active-link:hover,
+.line {
   background: linear-gradient(90deg, #FD9800, #0b0bf0, #ff6a68);
   background-clip: text;
   -webkit-text-fill-color: transparent;
