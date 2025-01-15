@@ -21,18 +21,9 @@ body.dark-mode {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* .active-link {
-  border-bottom: 1px solid #FD9800;
-  border-bottom: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6a68);
-  padding-bottom: 5px;
-} */
-
 .active-link {
   position: relative;
   display: inline-block;
-  /* text-decoration: none; */
-  /* color: #333; */
-  /* font-size: 18px; */
 }
 
 .active-link::after {
@@ -41,7 +32,7 @@ body.dark-mode {
   bottom: -10px;
   left: 0;
   width: 100%;
-  height: 2px; /* Thickness of the border */
+  height: 2px;
   background: linear-gradient(90deg, #FD9800, #0b0bf0, #ff6a68);
 }
 
@@ -55,8 +46,7 @@ body.dark-mode {
 
 
 .nav-link:hover, .active-link:hover {
-  /* color: #FD9800; */
   background: linear-gradient(90deg, #FD9800, #0b0bf0, #ff6a68);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }

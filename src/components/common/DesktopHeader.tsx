@@ -22,14 +22,14 @@ const DesktopHeader = () => {
           </ul>
         </nav>
         <div>
-          <ul className="flex flex-row gap-5">
+          <ul className="flex flex-row gap-5 items-center">
             <li>
               <button onClick={toggleTheme}>
                 {theme === 'light' ? (<FontAwesomeIcon icon={faMoon}/>) : (<FontAwesomeIcon icon={faSun} className="" />)}
               </button>
             </li>
             <li><Link to="https://github.com/KingsleyIbe" target="__blank"><FontAwesomeIcon icon={faGithub}/></Link></li>
-            <li><button>Let's Connect</button></li>
+            <li className="rounded-[8px] py-2 px-5 border-[#ccc] border-solid border-[1px]"><Link to="mailto:ibekingsley66@gmail.com">Let's Connect</Link></li>
           </ul>
         </div>
       </header>
