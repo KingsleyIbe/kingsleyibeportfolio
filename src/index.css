@@ -9,6 +9,13 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+
 body.light-mode {
   background-color: #ffffff;
   color: #000000;
@@ -53,3 +60,26 @@ body.dark-mode {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+i {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(90deg, #fd9800, #0b0bf0, #ff6a68);
+  animation: animate 2s linear forwards;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
+
