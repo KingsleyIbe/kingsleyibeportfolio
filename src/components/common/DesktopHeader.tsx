@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useTheme } from './ThemeContext.tsx';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 
 const DesktopHeader = () => {
   const { theme, toggleTheme } = useTheme();
@@ -19,13 +22,13 @@ const DesktopHeader = () => {
           </ul>
         </nav>
         <div>
-          <ul className="flex flex-row gap-10">
+          <ul className="flex flex-row gap-5">
             <li>
               <button onClick={toggleTheme}>
-                {theme === 'light' ? '🌙' : '🌞'}
+                {theme === 'light' ? (<FontAwesomeIcon icon={faMoon}/>) : (<FontAwesomeIcon icon={faSun} className="" />)}
               </button>
             </li>
-            <li><Link to="/about-me">Github</Link></li>
+            <li><Link to="https://github.com/KingsleyIbe" target="__blank"><FontAwesomeIcon icon={faGithub}/></Link></li>
             <li><button>Let's Connect</button></li>
           </ul>
         </div>
