@@ -10,8 +10,8 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
+  /* height: 100vh; */
+  /* overflow: hidden; */
   font-family: Arial, sans-serif;
 }
 
@@ -83,3 +83,23 @@ i {
   }
 }
 
+.contribution-stats {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.calendar {
+  margin-top: 20px;
+  display: grid;
+  gap: 2px;
+  align-items: center;
+}
+
+.day {
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+.day:hover {
+  transform: scale(1.2);
+}
