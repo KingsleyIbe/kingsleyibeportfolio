@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const DesktopHeader = () => {
   return (
-    <div className="text-[#fff]">
-      <header className="flex flex-row justify-between">
+    <div className="text-[#fff] font-bold py-[50px] px-[100px]">
+      <header className="flex flex-row justify-between items-center">
         <div>
-            <h1><Link to="/">Kingsley Ibe</Link></h1>
+            <Link to="/"><h1 className="logo">@KingsleyIbe</h1></Link>
         </div>
         <nav>
-            <ul className="flex flex-row gap-10">
-                <li><Link to="/about-me">About</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
+            <ul className="flex flex-row gap-10 text-[#ccc]">
+                <li><NavLink to="/about-me" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')}>About</NavLink></li>
+                <li><NavLink to="/portfolio" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')}>Portfolio</NavLink></li>
+                <li><NavLink to="/blog" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')}>Blog</NavLink></li>
             </ul>
         </nav>
         <div>
