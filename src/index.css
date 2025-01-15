@@ -9,8 +9,16 @@
   padding: 0;
 }
 
-body {
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
   background-color: #181842;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* .active-link {
