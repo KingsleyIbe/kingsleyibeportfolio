@@ -25,6 +25,10 @@ body.light-mode {
   .desktop-header {
     background-color: #ffffff;
   }
+
+  .bg-grad {
+    background: linear-gradient(90deg, #f9f9fa, #fafaff);
+  }
 }
 
 body.dark-mode {
@@ -34,6 +38,10 @@ body.dark-mode {
 
   .desktop-header {
     background-color: #181842;
+  }
+
+  .bg-grad {
+    background: linear-gradient(90deg, #393946, #181842);
   }
 }
 
@@ -112,4 +120,18 @@ i {
 
 .day:hover {
   transform: scale(1.2);
+}
+
+.experience-cont {
+  transition: transform 1.2s ease;
+  box-shadow: 0 0 15px rgba(144, 144, 185, 0.5);
+  border: 1px solid #706e6e;
+}
+
+.experience-cont:hover {
+  transform: scale(1.1);
+}
+
+.even {
+  margin-left: auto;
 }

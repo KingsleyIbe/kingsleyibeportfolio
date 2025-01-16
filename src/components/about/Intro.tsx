@@ -1,5 +1,5 @@
 import React from 'react';
-import Kingsley from '../assets/images/kingsley.png';
+import Kingsley from '../../assets/images/kingsley.png';
 // import GitHubStats from './GithubStats';
 import Contributions from './ContributionStats.tsx';
 
