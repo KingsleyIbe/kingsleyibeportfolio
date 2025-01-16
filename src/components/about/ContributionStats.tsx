@@ -81,53 +81,71 @@ const ContributionStats: React.FC = () => {
     <div className="contribution-stats">
       <h1 className="text-[25px] opacity-[0.8]">GitHub Contributions</h1>
       <p>{totalContributions} contributions within the last year</p>
-      <div
-        className="calendar"
-        style={{
-          display: "grid",
-          gridTemplateColumns: `40px repeat(${contributions.length}, 12px)`,
-          gap: "2px",
-        }}
-      >
-        {/* Month Labels */}
-        <div></div>
-        {contributions.map((_, weekIndex) => {
-          const monthLabel = getMonthLabels().find((m) => m.index === weekIndex)?.label;
-          return (
-            <div key={weekIndex} style={{ textAlign: "center", fontSize: "12px" }}>
-              {monthLabel || ""}
+      <div className="flex items-start">
+        <div className="mt-8 mr-2">
+          {daysOfWeek.map((day, index) => (
+            <div key={index} className="flex flex-col gap-5 text-right text-[12px]">
+              {day}
             </div>
-          );
-        })}
+          ))}
+        </div>
 
-        {/* Days of the Week (Vertical) */}
-        {daysOfWeek.map((day, index) => (
-          <div key={index} style={{ textAlign: "right", fontSize: "12px", paddingRight: "5px" }}>
-            {day}
-          </div>
-        ))}
-
-        {/* Contribution Grid */}
-        {daysOfWeek.map((_, dayIndex) =>
-          contributions.map((week, weekIndex) => {
-            const day = week.contributionDays[dayIndex];
+        <div
+          className="calendar"
+          style={{
+            display: "grid",
+            gridTemplateColumns: `repeat(${contributions.length}, 12px)`,
+            gap: "5px",
+          }}
+        >
+          
+          {contributions.map((_, weekIndex) => {
+            const monthLabel = getMonthLabels().find((m) => m.index === weekIndex)?.label;
             return (
               <div
-                key={`${weekIndex}-${dayIndex}`}
-                className="day"
-                title={day ? `Date: ${day.date}, Contributions: ${day.contributionCount}` : ""}
+                key={weekIndex}
                 style={{
-                  backgroundColor: day ? day.color : "transparent",
-                  width: "12px",
-                  height: "12px",
-                  margin: "2px",
+                  textAlign: "center",
+                  fontSize: "12px",
+                  height: "14px",
                 }}
-              ></div>
+              >
+                {monthLabel || ""}
+              </div>
             );
-          })
-        )}
+          })}
+
+        
+          {daysOfWeek.map((_, dayIndex) =>
+            contributions.map((week, weekIndex) => {
+              const day = week.contributionDays[dayIndex];
+              return (
+                <div
+                  key={`${weekIndex}-${dayIndex}`}
+                  className="day"
+                  title={day ? `Date: ${day.date}, Contributions: ${day.contributionCount}` : ""}
+                  style={{
+                    backgroundColor: day ? day.color : "transparent",
+                    width: "12px",
+                    height: "12px",
+                  }}
+                ></div>
+              );
+            })
+          )}
+        </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "end", gap: "10px", marginTop: "10px", fontSize: "12px" }}>
+
+    
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "end",
+          gap: "10px",
+          marginTop: "10px",
+          fontSize: "12px",
+        }}
+      >
         <span>Less</span>
         <div style={{ display: "flex", gap: "4px" }}>
           <div style={{ width: "12px", height: "12px", backgroundColor: "#eee" }}></div>

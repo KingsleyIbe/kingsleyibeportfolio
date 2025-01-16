@@ -8,7 +8,6 @@ const index = () => {
     <div className="relative">
       <DesktopHeader />
       <Intro />
-      <Intro />
       <Footer />
     </div>
   )

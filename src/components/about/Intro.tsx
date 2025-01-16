@@ -1,5 +1,6 @@
 import React from 'react';
 import Kingsley from '../assets/images/kingsley.png';
+// import GitHubStats from './GithubStats';
 import Contributions from './ContributionStats.tsx';
 
 const Intro = () => {
@@ -24,6 +25,7 @@ const Intro = () => {
             </div>
            <div>
             <Contributions />
+            {/* <GitHubStats username="kingsleyibe" /> */}
            </div>
         </div>
     )
