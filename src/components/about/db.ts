@@ -1,5 +1,8 @@
 import { Experience, Education } from "../../helpers/interface";
-import drelugs from "../../assets/images/Drelugs.png"
+import drelugs from "../../assets/images/Drelugs.png";
+import google from "../../assets/images/google.png";
+import microverse from "../../assets/images/microverse.png";
+import imopoly from "../../assets/images/imopoly.png";
 
 export const workExperience: Experience[] = [
     {
@@ -71,7 +74,7 @@ export const education: Education[] = [
         course: "HND, Chemical Engineering",
         issueDate: "Oct, 2017",
         courseContent: ["Engineering Processes", "Critical Thinking", "Problem Solving"],
-        logo: drelugs
+        logo: imopoly
     },
     {
         id: 2,
@@ -79,7 +82,7 @@ export const education: Education[] = [
         course: "Software Development",
         issueDate: "May, 2022",
         courseContent: ["Data Structure and Algorithms", "Database", "Computer Science"],
-        logo: drelugs
+        logo: microverse
     },
     {
         id: 3,
@@ -87,7 +90,7 @@ export const education: Education[] = [
         course: "Google Africa Web Development Program",
         issueDate: "May, 2022",
         courseContent: ["Data Structure and Algorithms", "Collaboration", "Computer Science"],
-        logo: drelugs
+        logo: google
     },
     
 ]

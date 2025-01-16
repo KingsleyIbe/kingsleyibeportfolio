@@ -5,7 +5,8 @@ import { Link } from 'react-router';
 const Education = () => {
   return (
     <div className="px-[100px] pt-[100px]">
-        <h1 className="text-[25px] opacity-[0.8] mb-10">Experience</h1>
+        <h1 className="text-[25px] opacity-[0.8]">Experience</h1>
+        <p className="mb-10">I am mostly self-taught, but here are some of the most relevant certifications I have achieved:</p>
         {education && education.map((item, index) => (
             <div key={index} className={`${index % 2 == 0 ? "odd" : "even"} experience-cont opacity-[0.9] mb-10 w-[75%] rounded-[8px] p-10 bg-grad`}>
                 <div className="flex flex-row justify-between">
