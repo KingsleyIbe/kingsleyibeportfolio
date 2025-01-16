@@ -5,7 +5,7 @@ import Intro from './Intro.tsx';
 
 const index = () => {
   return (
-    <div>
+    <div className="relative">
       <DesktopHeader />
       <Intro />
       <Footer />

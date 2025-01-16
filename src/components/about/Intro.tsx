@@ -4,7 +4,7 @@ import Contributions from './ContributionStats.tsx';
 
 const Intro = () => {
     return (
-        <div className="px-[100px]">
+        <div className="px-[100px] pt-[100px]">
             <div className="flex flex-row justify-between">
                 <div>
                     <h1 className="text-[45px] font-bold opacity-[0.6]">Kingsley Ibe</h1>
