@@ -17,3 +17,14 @@ export interface Experience {
     logo: string;
     courseContent: string[];
   }
+
+  export interface Portfolio {
+    id: number;
+    image: string;
+    title: string;
+    stacks: string[];
+    description: string;
+    year: string;
+    link: string;
+    github?: string
+  }

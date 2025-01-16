@@ -28,7 +28,7 @@ const Education = () => {
                 </div>
             </div>
         ))}
-        <Link to="https://www.linkedin.com/in/kingsley-ibe/details/certifications/" target="__blank" className="text-[35px] mb-[100px] line hover:opacity-[0.6]">See More Certification → </Link>
+        <Link to="https://www.linkedin.com/in/kingsley-ibe/details/certifications/" target="__blank" className="text-[35px] mb-[100px] line hover:opacity-[0.6]">See More Certifications → </Link>
     </div>
   )
 };
