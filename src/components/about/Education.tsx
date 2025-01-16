@@ -16,8 +16,8 @@ const Education = () => {
                             <div>
                                 <h3 className="font-bold">{item.course}</h3>
                                 <p>{item.school}</p>
-                                <p className="font-semibold opacity-[0.6]">Course Content: {item.courseContent.map((item)=> (
-                                    <span className="mr-2">{item}</span>
+                                <p className="font-semibold">Course Content: {item.courseContent.map((item)=> (
+                                    <span className="mr-2 opacity-[0.6]">{item}</span>
                                 ))}</p>
                             </div>
                         </div>

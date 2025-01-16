@@ -14,13 +14,15 @@ const Experience = () => {
                             <div>
                                 <h3 className="font-bold">{item.position}</h3>
                                 <p>{item.company}</p>
-                                <p className="font-semibold opacity-[0.6]">Technologies: {item.Technologies}</p>
+                                <p className="font-semibold">Technologies: {item.Technologies.map((item)=> (
+                                    <span className="mr-2 opacity-[0.6]">{item}</span>
+                                ))}</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-row gap-2">
                         <p>{item.startDate}</p>
-                        <p>---</p>
+                        <p>–</p>
                         <p>{item.endDate}</p>
                     </div>
                 </div>
