@@ -4,6 +4,7 @@ import Footer from '../common/Footer.tsx';
 import Intro from './Intro.tsx';
 import Tool from './Tool.tsx';
 import Experience from './Experience.tsx';
+import Education from './Education.tsx';
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
       <Intro />
       <Tool />
       <Experience />
+      <Education />
       <Footer />
     </div>
   )

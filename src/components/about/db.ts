@@ -1,4 +1,4 @@
-import { Experience } from "../../helpers/interface";
+import { Experience, Education } from "../../helpers/interface";
 import drelugs from "../../assets/images/Drelugs.png"
 
 export const workExperience: Experience[] = [
@@ -62,4 +62,32 @@ export const workExperience: Experience[] = [
           "Successfully coordinated and executed the seamless integration of third-party APIs, expanding product functionality and meeting evolving customer needs."
       ]
       },
+]
+
+export const education: Education[] = [
+    {
+        id: 1,
+        school: "Imo State Polytechnic",
+        course: "HND, Chemical Engineering",
+        issueDate: "Oct, 2017",
+        courseContent: ["Engineering Processes", "Critical Thinking", "Problem Solving"],
+        logo: drelugs
+    },
+    {
+        id: 2,
+        school: "Microverse",
+        course: "Software Development",
+        issueDate: "May, 2022",
+        courseContent: ["Data Structure and Algorithms", "Database", "Computer Science"],
+        logo: drelugs
+    },
+    {
+        id: 3,
+        school: "Google",
+        course: "Google Africa Web Development Program",
+        issueDate: "May, 2022",
+        courseContent: ["Data Structure and Algorithms", "Collaboration", "Computer Science"],
+        logo: drelugs
+    },
+    
 ]
