@@ -15,6 +15,7 @@ const ContributionStats: React.FC = () => {
   const [contributions, setContributions] = useState<ContributionWeek[]>([]);
   const [totalContributions, setTotalContributions] = useState<number>(0);
   const [error, setError] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(true); // Loading state added
 
   useEffect(() => {
     const fetchContributions = async () => {
@@ -53,6 +54,8 @@ const ContributionStats: React.FC = () => {
         setTotalContributions(data.totalContributions);
       } catch (err) {
         setError("Failed to fetch contributions. Please try again later.");
+      } finally {
+        setLoading(false); // Stop loading after fetching data
       }
     };
 
@@ -75,13 +78,15 @@ const ContributionStats: React.FC = () => {
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+  if (loading) return <div>Loading contributions...</div>; // Show loading message
+
   if (error) return <div>{error}</div>;
 
   return (
     <div className="contribution-stats">
       <h1 className="text-[25px] opacity-[0.8]">GitHub Contributions</h1>
       <p>{totalContributions} contributions within the last year</p>
-      <div className="flex items-start">
+      <div className="flex items-start opacity-[0.6]">
         <div className="mt-8 mr-2">
           {daysOfWeek.map((day, index) => (
             <div key={index} className="flex flex-col gap-5 text-right text-[12px]">
@@ -98,7 +103,6 @@ const ContributionStats: React.FC = () => {
             gap: "5px",
           }}
         >
-          
           {contributions.map((_, weekIndex) => {
             const monthLabel = getMonthLabels().find((m) => m.index === weekIndex)?.label;
             return (
@@ -115,7 +119,6 @@ const ContributionStats: React.FC = () => {
             );
           })}
 
-        
           {daysOfWeek.map((_, dayIndex) =>
             contributions.map((week, weekIndex) => {
               const day = week.contributionDays[dayIndex];
@@ -136,7 +139,6 @@ const ContributionStats: React.FC = () => {
         </div>
       </div>
 
-    
       <div
         style={{
           display: "flex",
