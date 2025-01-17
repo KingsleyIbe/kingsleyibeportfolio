@@ -71,7 +71,7 @@ export const portfolio: Portfolio[] = [
       {
         id: 8,
         image: slapa,
-        title: "Synthetic Slapa",
+        title: "Synthetic",
         stacks: ["React", "Javascript", "Crypto"],
         description: "I have created Blockchain project that allows users to trade their crypto assets such as UTTA Token",
         year: "2022",
