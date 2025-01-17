@@ -28,3 +28,13 @@ export interface Experience {
     link: string;
     github?: string
   }
+
+  export interface Blog {
+    id: number;
+    backgroundImage: string;
+    title: string;
+    description: string;
+    readTime: string; 
+    date: string;
+    href: string;
+  }
