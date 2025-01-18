@@ -21,7 +21,7 @@ const Carousel: React.FC = () => {
     };
 
     return (
-        <div className="carousel mb-[100px]">
+        <div className="carousel mb-[100px] text-[#fff]">
             <div
                 className="carousel-slide"
                 style={{

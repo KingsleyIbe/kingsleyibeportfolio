@@ -5,7 +5,7 @@ import Intro from './Intro.tsx';
 
 const index = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <DesktopHeader />
       <Intro />
       <Footer />
