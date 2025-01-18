@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 
 const Footer = () => {
   return (
-    <div className="px-[100px] flex flex-row justify-between items-center mb-[50px]">
+    <div className="px-[40px] sm:px-[100px] flex flex-row justify-between items-center mb-[50px]">
       <div>
         {/* <Link to="mailto:ibekingsley66@gmail.com">Let's Connect</Link> */}
         <p>Copyright &copy; {new Date().getFullYear().toString()}</p>
