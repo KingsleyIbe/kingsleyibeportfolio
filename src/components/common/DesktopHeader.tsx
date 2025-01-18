@@ -9,7 +9,7 @@ const DesktopHeader = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="hidden sm:block desktop-header font-bold py-[20px] px-[100px] fixed w-[100%] z-10">
+    <div className="hidden md:block desktop-header font-bold py-[20px] px-[100px] fixed w-[100%] z-10">
       <header className="flex flex-row justify-between items-center">
         <div>
           <Link to="/"><h1 className="logo hover:opacity-[0.6] text-[24px]">@KingsleyIbe</h1></Link>

@@ -86,7 +86,7 @@ const ContributionStats: React.FC = () => {
     <div className="contribution-stats">
       <h1 className="text-[25px] opacity-[0.8]">GitHub Contributions</h1>
       <p>{totalContributions} contributions within the last year</p>
-      <div className="flex items-start opacity-[0.6]">
+      <div className="overflow-x-scroll w-[100%] md:overflow-hidden flex items-start opacity-[0.6]">
         <div className="mt-8 mr-2">
           {daysOfWeek.map((day, index) => (
             <div key={index} className="flex flex-col gap-5 text-right text-[12px]">
