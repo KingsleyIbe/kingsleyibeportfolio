@@ -21,18 +21,18 @@ const Carousel: React.FC = () => {
     };
 
     return (
-        <div className="carousel mb-[100px] text-[#fff]">
+        <div className="carousel mb-[50px] sm:mb-[100px] text-[#fff]">
             <div
                 className="carousel-slide"
                 style={{
                     backgroundImage: `url(${blog[currentSlide]?.backgroundImage})`,
                 }}
             >
-                <div className="z-10 w-[80%] mt-[150px] m-auto">
-                    <h1 className="text-[40px] font-bold text-center mb-10">{blog[currentSlide]?.title}</h1>
+                <div className="z-10 w-[80%] mt-[50px] sm:mt-[150px] m-auto">
+                    <h1 className="text-[25px] sm:text-[40px] font-bold text-center mb-10">{blog[currentSlide]?.title}</h1>
                     <p className="text-center">{blog[currentSlide]?.description}</p>
                 </div>
-                <div className="flex flex-row justify-between items-center mt-[150px] px-[100px] pt-[150px ">
+                <div className="flex flex-row justify-between items-center mt-[50px] sm:mt-[150px] px-5 sm:px-[100px] pt-[150px ">
                     <div className="flex flex-row gap-10 items-center">
                         <Link to={blog[currentSlide].href} target="__blank" className="border p-2 rounded-[8px]">Read Article</ Link>
                         <ul><li className="list-disc">{blog[currentSlide].readTime}</li></ul>

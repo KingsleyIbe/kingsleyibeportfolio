@@ -37,7 +37,7 @@ const MobileHeader = () => {
 
                 </div>
                 {openMenu && (
-                    <nav className=" flex flex-col gap-4 justify-between gap-10 border-t-[1px] border-t-[#ccc] border-t-solid mt-5 pt-5">
+                    <nav className=" flex flex-col justify-between gap-10 border-t-[1px] border-t-[#ccc] border-t-solid mt-5 pt-5">
                         <ul className="flex flex-col gap-4 opacity-[0.8]">
                             <li><NavLink to="/about-me" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')}>About</NavLink></li>
                             <li><NavLink to="/portfolio" className={({ isActive }) => (isActive ? 'active-link' : 'nav-link')}>Portfolio</NavLink></li>

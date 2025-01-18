@@ -29,13 +29,13 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <div className="px-[100px] pt-[100px] mb-[80px]">
+        <div className="px-5 sm:px-[100px] pt-[50px] sm:pt-[100px] mb-[80px]">
             <h1 className="text-[25px] opacity-[0.8] mb-10">Portfolio</h1>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
                 {currentCourses.map((project, index) => (
                     <div
                         key={index}
-                        className="experience-cont p-5 rounded-[8px] w-[33.3%]"
+                        className="experience-cont p-5 rounded-[8px] w-[100%] sm:w-[33.3%]"
                         style={{
                             background: gradients[index % gradients.length], // Assign gradient cyclically
                         }}
