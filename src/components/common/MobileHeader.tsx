@@ -15,7 +15,7 @@ const MobileHeader = () => {
     };
 
     return (
-        <div className="block md:hidden p-5">
+        <div className="block absolute w-[100%] md:hidden p-5">
             <header>
                 <div className="flex flex-row items-center justify-between">
                     <Link to="/"><h1 className="logo hover:opacity-[0.6]">@KingsleyIbe</h1></Link>

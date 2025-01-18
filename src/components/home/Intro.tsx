@@ -43,10 +43,10 @@ const Intro = () => {
       }, []);
     
     return (
-        <div className="px-5 sm:px-[100px] pt-[50px] sm:pt-[150px] mb-[50px] sm:mb-[150px]">
-            <h1 className="text-[40px] md:text-8xl sm:text-7xl xl:text-9xl font-bold opacity-[0.8]">Kingsley Ibe</h1>
-            <p className="text-[30px] sm:text-[50px] opacity-[0.6]" >I build things for the web</p>
-            <Link to="/about-me" className="text-[20px] sm:text-[35px] line hover:opacity-[0.6]">Read more about me → </Link>
+        <div className="px-5 md:px-[100px] pt-[50px] md:pt-[150px] mb-[50px] md:mb-[150px]">
+            <h1 className="text-[40px] md:text-8xl md:text-7xl xl:text-9xl font-bold opacity-[0.8]">Kingsley Ibe</h1>
+            <p className="text-[30px] md:text-[50px] opacity-[0.6]" >I build things for the web</p>
+            <Link to="/about-me" className="text-[20px] md:text-[35px] line hover:opacity-[0.6]">Read more about me → </Link>
         </div>
     )
 };
