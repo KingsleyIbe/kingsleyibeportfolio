@@ -21,12 +21,16 @@ body.light-mode {
   color: #000000;
   transition: background-color 0.3s, color 0.3s;
 
-  .desktop-header {
+  .desktop-header, .mobile-header {
     background-color: #ffffff;
   }
 
   .bg-grad {
     background: linear-gradient(90deg, #f9f9fa, #fafaff);
+  }
+
+  .menu-line {
+    background-color: #181842;
   }
 }
 
@@ -35,12 +39,16 @@ body.dark-mode {
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
 
-  .desktop-header {
+  .desktop-header, .mobile-header {
     background-color: #181842;
   }
 
   .bg-grad {
     background: linear-gradient(90deg, #393946, #181842);
+  }
+
+  .menu-line {
+    background-color: #fff;
   }
 }
 
@@ -154,7 +162,6 @@ i {
 .menu-icon .menu-line {
   width: 30px;
   height: 4px;
-  background-color: #fff;
   margin: 4px 0;
   transition: all 0.3s ease-in-out;
 }

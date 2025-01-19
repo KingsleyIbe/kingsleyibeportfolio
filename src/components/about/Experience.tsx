@@ -6,7 +6,7 @@ const Experience = () => {
     <div className="px-5 md:px-[100px] pt-[100px]">
         <h1 className="text-[25px] opacity-[0.8] mb-10">Experience</h1>
         {workExperience && workExperience.map((item, index) => (
-            <div key={index} className={`${index % 2 == 0 ? "odd" : "even"} experience-cont opacity-[0.9] mb-10 w-[100%] md:w-[75%] rounded-[8px] p-6 md:p-10 bg-grad`}>
+            <div key={index} className={`${index % 2 === 0 ? "odd" : "even"} experience-cont opacity-[0.9] mb-10 w-[100%] md:w-[75%] rounded-[8px] p-6 md:p-10 bg-grad`}>
                 <div className="flex flex-col md:flex-row justify-between">
                     <div>
                         <div className="flex flex-row gap-5 items-center">

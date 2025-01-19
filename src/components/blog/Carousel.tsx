@@ -28,7 +28,7 @@ const Carousel: React.FC = () => {
                     backgroundImage: `url(${blog[currentSlide]?.backgroundImage})`,
                 }}
             >
-                <div className="z-10 w-[80%] mt-[50px] md:mt-[150px] m-auto">
+                <div className="z-10 w-[80%] mt-[150px] m-auto">
                     <h1 className="text-[25px] md:text-[40px] font-bold text-center mb-10">{blog[currentSlide]?.title}</h1>
                     <p className="text-center">{blog[currentSlide]?.description}</p>
                 </div>

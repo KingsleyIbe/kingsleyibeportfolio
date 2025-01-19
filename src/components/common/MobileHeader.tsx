@@ -15,7 +15,7 @@ const MobileHeader = () => {
     };
 
     return (
-        <div className="block absolute w-[100%] md:hidden p-5">
+        <div className="z-10 mobile-header block fixed w-[100%] md:hidden p-5">
             <header>
                 <div className="flex flex-row items-center justify-between">
                     <Link to="/"><h1 className="logo hover:opacity-[0.6]">@KingsleyIbe</h1></Link>
@@ -23,7 +23,7 @@ const MobileHeader = () => {
                         <ul className="flex flex-row gap-5">
                             <li>
                                 <button onClick={toggleTheme}>
-                                    {theme === 'light' ? (<FontAwesomeIcon icon={faMoon} />) : (<FontAwesomeIcon icon={faSun} className="hover:opacity-[0.6] text-[25px]" />)}
+                                    {theme === 'light' ? (<FontAwesomeIcon icon={faMoon} className="hover:opacity-[0.6] text-[25px]"/>) : (<FontAwesomeIcon icon={faSun} className="hover:opacity-[0.6] text-[25px]" />)}
                                 </button>
                             </li>
                             <li className="hover:opacity-[0.6]"><Link to="https://github.com/KingsleyIbe" target="__blank"><FontAwesomeIcon icon={faGithub} className="text-[25px]" /></Link></li>
