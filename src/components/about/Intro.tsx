@@ -1,11 +1,10 @@
 import React from 'react';
 import Kingsley from '../../assets/images/kingsley.png';
-// import GitHubStats from './GithubStats';
 import Contributions from './ContributionStats.tsx';
 
 const Intro = () => {
     return (
-        <div className="px-5 pt-[100px] md:pt-[100px]">
+        <div className="px-5 md:px-[100px] pt-[100px]">
             <div className="hidden md:block flex flex-row justify-between">
                 <div>
                     <h1 className="text-[45px] font-bold opacity-[0.6]">Kingsley Ibe</h1>
@@ -35,10 +34,9 @@ const Intro = () => {
             </div>
            <div>
             <Contributions />
-            {/* <GitHubStats username="kingsleyibe" /> */}
            </div>
         </div>
-    )
-}
+    );
+};
 
 export default Intro;

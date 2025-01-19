@@ -7,7 +7,7 @@ export interface Experience {
     endDate: string;
     Technologies: string[];
     accomplishment: string[];
-  }
+  };
 
   export interface Education {
     id: number;
@@ -16,7 +16,7 @@ export interface Experience {
     issueDate: string;
     logo: string;
     courseContent: string[];
-  }
+  };
 
   export interface Portfolio {
     id: number;
@@ -27,7 +27,7 @@ export interface Experience {
     year: string;
     link: string;
     github?: string
-  }
+  };
 
   export interface Blog {
     id: number;
@@ -37,4 +37,4 @@ export interface Experience {
     readTime: string; 
     date: string;
     href: string;
-  }
+  };

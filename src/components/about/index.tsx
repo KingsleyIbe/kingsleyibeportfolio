@@ -16,7 +16,7 @@ const index = () => {
       <Education />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default index;

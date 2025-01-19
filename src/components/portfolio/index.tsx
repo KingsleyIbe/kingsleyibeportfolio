@@ -12,7 +12,7 @@ const index = () => {
       <Projects />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default index;

@@ -15,7 +15,7 @@ const ContributionStats: React.FC = () => {
   const [contributions, setContributions] = useState<ContributionWeek[]>([]);
   const [totalContributions, setTotalContributions] = useState<number>(0);
   const [error, setError] = useState<string>("");
-  const [loading, setLoading] = useState<boolean>(true); // Loading state added
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchContributions = async () => {
@@ -55,7 +55,7 @@ const ContributionStats: React.FC = () => {
       } catch (err) {
         setError("Failed to fetch contributions. Please try again later.");
       } finally {
-        setLoading(false); // Stop loading after fetching data
+        setLoading(false);
       }
     };
 
@@ -78,7 +78,7 @@ const ContributionStats: React.FC = () => {
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  if (loading) return <div>Loading contributions...</div>; // Show loading message
+  if (loading) return <div>Loading contributions...</div>;
 
   if (error) return <div>{error}</div>;
 

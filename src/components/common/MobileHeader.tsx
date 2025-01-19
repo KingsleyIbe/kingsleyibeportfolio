@@ -3,7 +3,6 @@ import { useTheme } from './ThemeContext.tsx';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-// import Logo from '../../assets/images/Logo.png';
 import { Link, NavLink } from 'react-router';
 
 const MobileHeader = () => {
@@ -51,7 +50,7 @@ const MobileHeader = () => {
             </header>
 
         </div>
-    )
-}
+    );
+};
 
 export default MobileHeader;

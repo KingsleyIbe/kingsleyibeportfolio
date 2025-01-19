@@ -9,12 +9,12 @@ const Projects: React.FC = () => {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const coursesPerPage = 4;
 
-    // Calculate the courses to display for the current page
+
     const indexOfLastCourse = currentPage * coursesPerPage;
     const indexOfFirstCourse = indexOfLastCourse - coursesPerPage;
     const currentCourses = portfolio.slice(indexOfFirstCourse, indexOfLastCourse);
 
-    // Calculate total pages
+
     const totalPages = Math.ceil(portfolio.length / coursesPerPage);
 
     const handlePageChange = (page: number) => {
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                         key={index}
                         className="experience-cont p-5 rounded-[8px] w-[100%] md:w-[33.3%]"
                         style={{
-                            background: gradients[index % gradients.length], // Assign gradient cyclically
+                            background: gradients[index % gradients.length],
                         }}
                     >
                         <div>
@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
                     </div>
                 ))}
             </div>
-            {/* Pagination Controls */}
+            
             <div className="flex justify-center mt-8">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button

@@ -38,4 +38,4 @@ export const blog: Blog[] = [
     date: "Jan 13, 2024",
     href: "https://medium.com/@ibekingsley/10-javascript-intriguing-facts-that-will-amaze-you-f73337a7992c",
 },
-] 
+];

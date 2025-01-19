@@ -7,9 +7,8 @@ import { Link } from 'react-router';
 
 const Footer = () => {
   return (
-    <div className="px-[40px] md:px-[100px] flex flex-row justify-between items-center mb-[50px]">
+    <div className="px-5 md:px-[100px] flex flex-row justify-between items-center mb-[50px]">
       <div>
-        {/* <Link to="mailto:ibekingsley66@gmail.com">Let's Connect</Link> */}
         <p>Copyright &copy; {new Date().getFullYear().toString()}</p>
       </div>
       <ul className="flex flex-row gap-2 opacity-[0.6]">
@@ -20,7 +19,7 @@ const Footer = () => {
         <li className="hover:opacity-[0.2]"><Link to="https://medium.com/@ibekingsley" target="__blank"><FontAwesomeIcon icon={faMedium}/></Link></li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;

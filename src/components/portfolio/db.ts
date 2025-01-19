@@ -75,4 +75,4 @@ export const portfolio: Portfolio[] = [
         link: "https://kingsleyibe.github.io/react-todos-app/",
         github: "https://github.com/KingsleyIbe/react-todos-app"
       },
-]
+];

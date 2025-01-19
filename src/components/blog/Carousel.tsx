@@ -7,13 +7,12 @@ import "./carousel.css";
 const Carousel: React.FC = () => {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-    // Automatically move to the next slide every 5 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % blog?.length);
         }, 5000);
 
-        return () => clearInterval(interval); // Cleanup on component unmount
+        return () => clearInterval(interval);
     }, []);
 
     const navigateToSlide = (index: number) => {
@@ -43,7 +42,6 @@ const Carousel: React.FC = () => {
                 </div>
             </div>
 
-            {/* Dot Navigation */}
             <div className="carousel-dots">
                 {blog?.map((_, index) => (
                     <span

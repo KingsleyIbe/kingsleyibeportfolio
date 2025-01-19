@@ -6,7 +6,7 @@ import MobileHeader from '../common/MobileHeader.tsx';
 
 const index = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative">
       <DesktopHeader />
       <MobileHeader />
       <Intro />
