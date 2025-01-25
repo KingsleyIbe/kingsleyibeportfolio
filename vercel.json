@@ -1,17 +1,9 @@
 {
+  "outputDirectory": "build",
   "rewrites": [
-  { 
-    "source": "/(.*)",
-    "destination": "/" 
-  }
-  ],
-
-  "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ],
-  "outputDirectory": "build"
-
+  ]
 }
